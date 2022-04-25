@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Fernando Diniz</title>
+        <meta charset="utf-8">
+        <style>
+           body {background-color: rgb(0, 0, 0); color: beige;
+        }
+        h4 {background-color: rgb(31, 31, 31);}
+        * { margin: 0; padding: 0; }
+        .slider {
+            display: block;
+            height: 400px;
+            width: 600px;
+            margin: auto;
+            margin-top: 20px;
+            position: relative;
+            }
+        .slider li {
+            list-style: none;
+            position: absolute;
+            }
+
+        .slider img {
+            margin: auto;
+            height: 100%;
+            width: 100%;
+            vertical-align: top;
+            }
+        .slider input {
+            display: none;
+        }
+        .slider label {
+            background-color: rgb(0, 230, 247);
+            bottom: 15px;
+            cursor: pointer;
+            display: block;
+            height: 10px;
+            position: absolute;
+            width: 15px;
+            z-index: 15;
+        }
+        .slider li:nth-child(1) label {
+            left: 10px;
+        }
+        .slider li:nth-child(2) label {
+            left: 40px;
+        }
+        .slider li:nth-child(3) label {
+            left: 70px;
+        }
+        .slider li:nth-child(4) label{
+            left: 25%;
+        }
+        .slider img {
+            opacity: 0;
+            visibility: hidden;
+        }
+        .slider li input:checked ~ img {
+            opacity: 1;
+            visibility: visible;
+            z-index: 10;
+        }
+        div.box {
+            width: 600px;
+            display: inline-block;
+        }
+        body {border-width: 50px;} 
+
+        </style>    
+    </head>
+    <body>
+        <center>
+            <h1>Fernando Diniz (1918 - 1999)</h1><br>
+        </center>
+        
+     <div class="box">
+           <center><img src="C:\_TRABALHO DE ESCOLA\Arthur\obras\cartaz.jpg" width= 500 height=350></center><br><br>
+        </div>
+
+    <div class="box">
+        <center><img src="C:\_TRABALHO DE ESCOLA\Arthur\Fernando-Diniz-5.webp" width= 400 height=350></center><br><br>
+    </div>
+    
+    <p>Fernando Diniz nasceu em Aratu, Bahia, em 1918. Aos quatro de idade veio para o Rio de Janeiro com sua mãe, que era excelente costureira. Morando em promíscuos casarões de cômodos, costumava acompanhá-la quando ia trabalhar em casa de famílias ricas e abastadas. Desde garoto, o sonho de Fernando era estudar para ser engenheiro. Inteligente, foi sempre o primeiro aluno da classe. Chegou até o primeiro ano científico, mas abandonou os estudos. Em julho de 1944, foi preso e levado para o manicômio judiciário, sob a alegação de estar nadando despido na praia
+        de Copacabana. 
+        Em 1949, começou a frequentar a Seção de Terapêutica Ocupacional. Quando chegou ao ateliê, não levantava a cabeça e sua voz baixa mal se ouvia. Ao ser perguntado sobre a razão da beleza de suas pinturas, respondia: “Não sou eu, são as tintas”. Em sua obra mescla o figurativo e o abstrato, abarcando das mais simples às mais complexas estruturas de composição.
+        <br><br>Fernando é um eterno aprendiz. Sua ânsia de conhecimento levou-o a considerar o hospital como uma universidade, e apesar de sua longa reclusão é impressionante a quantidade de informações que acumulou. Sua paixão pelos livros o fez constantemente atualizado com os acontecimentos e as descobertas científicas.
+        O resultado gráfico de toda essa atividade é um caleidoscópio de imagens ora sucessivas, ora superpostas, dinâmicas e coloridas. Do espaço para o tempo, do inorgânico para o orgânico, do geométrico para o figurativo, e vice-versa, Fernando foi tecendo o seu universo.
+        <br><br>Construiu em barro diversos Relógios do Sol, enormes engrenagens de luas e estrelas articuladas. Depois de sua participação no filme Em Busca do Espaço Cotidiano, de Leon Hirszman, pintou e desenhou uma série inspirada pelo cinema em que utilizava movimentos de zoom e outros elementos da linguagem cinematográfica, integrando na imagem o tempo e o espaço.  Esse interesse resultou no premiado desenho animado Estrela de Oito Pontas, para o qual realizou mais de 40 mil desenhos sobre a orientação do cineasta Marcos Magalhães.</p>
+    </h>
+    </p>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <h4>"Tudo no mundo é redondo, ou se não, quadrado. Na natureza as frutas são redondas. O homem fazendo é quadrado - caixas, etc. A natureza é assim. A bola do mundo é redonda também. Para mim uma mandala é uma porção de coisas, tem tantas coisas em volta da mandala... Alguém perguntou: Um ovo estrelado é uma mandala? Cada pessoa diz uma coisa, cada mandala é diferente da outra. Eu tava pensando que uma mandala é uma roda grande com uma porção de figurinhas de ouro em volta. Tava pensando que era alguma coisa da religião."</h4>
+    <br>
+    <br>
+    <br>
+        <center>-Fernando Diniz</center>
+    <hr>
+        </h>
+    <ul class="slider">
+        <li>
+            <input type="radio" id="slide1" name="slide" checked>
+            <label for="slide1"></label>
+            <img src="C:\_TRABALHO DE ESCOLA\Arthur\obras\obras.jpg">
+            
+        </li>
+        <li>
+            <input type="radio" id="slide2" name="slide">
+            <label for="slide2"></label>
+            <img src="C:\_TRABALHO DE ESCOLA\Arthur\obras\cartaz.jpg">
+        </li>
+        <li>
+            <input type="radio" id="slide3" name="slide">
+            <label for="slide3"></label>
+            <img src="C:\_TRABALHO DE ESCOLA\Arthur\obras\fernando-diniz03.jpg" >
+        </li>
+        <li>
+            <input type="radio" id="slide4" name="slide">
+            <label for="slide4"></label>
+            <img src="C:\_TRABALHO DE ESCOLA\Arthur\frase1.webp">
+        </li>
+        
+    </ul>
+    </div>
+    </body>
+
+
+</html>
